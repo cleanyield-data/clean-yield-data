@@ -11,15 +11,15 @@ week,company,ats,open_jobs,new_jobs,closed_jobs,remote_share,with_salary_share,m
 2026-W44,Amperity,greenhouse,15,,,0.2667,0,,Engineering;Sales;G&A,3
 2026-W44,Amwell,greenhouse,6,,,0.6667,0,,Marketing;Clinical Services;Hosting,2
 2026-W44,Anchorage Digital,lever,23,,,1,0,,Global Markets;Engineering;Global Operations,3
-2026-W44,Anduril,greenhouse,2596,,,0.0104,0.9307,171500,Hardware Operations : Supply Chain : Product Sourcing Engineering;Manufacturing : Manufacturing Engineering : Manufacturing Engineering;Hardware Platform : Hardware Engineering Services,10
+2026-W44,Anduril,greenhouse,2595,,,0.0104,0.9306,171500,Hardware Operations : Supply Chain : Product Sourcing Engineering;Manufacturing : Manufacturing Engineering : Manufacturing Engineering;Hardware Platform : Hardware Engineering Services,10
 2026-W44,Anthropic,greenhouse,672,,,0.1057,0.8676,345000,Sales;AI Research & Engineering;Applied AI,14
-2026-W44,Apollo.io,greenhouse,51,,,0.4902,0.7255,54600000,Sales;Engineering;People,6
+2026-W44,Apollo.io,greenhouse,50,,,0.48,0.72,53573000,Sales;Engineering;People,6
 2026-W44,AppLovin,greenhouse,43,,,0.0233,0.7209,397800000,Business Development - Consumer;Platform Engineering;Growth Marketing,5
 2026-W44,AppsFlyer,greenhouse,53,,,0,0,,R&D;Finance;Sales,10
 2026-W44,Arize AI,greenhouse,27,,,0.8519,0,,Sales;Solutions Engineering;Engineering,2
 2026-W44,Articulate,lever,2,,,1,1,,GTM Effectiveness;Product Marketing,1
 2026-W44,Asana,greenhouse,108,,,0.037,0,,Product Engineering;Customer Success;Professional Services & Paid Support,10
-2026-W44,AssemblyAI,greenhouse,17,,,0.1765,0,,Sales;Customer Experience;Engineering,3
+2026-W44,AssemblyAI,greenhouse,19,,,0.1579,0,,Sales;Customer Experience;Engineering,3
 2026-W44,Astranis,greenhouse,186,,,0,1,100100,Payload Internships;Production & Manufacturing Internships;Software Internships,1
 2026-W44,Attentive,greenhouse,27,,,0,0,,Engineering;Customer Success;Sales,3
 2026-W44,Backblaze,greenhouse,33,,,0.9697,0,,Engineering;Production Systems;Security,5
@@ -257,7 +257,7 @@ week,company,ats,open_jobs,new_jobs,closed_jobs,remote_share,with_salary_share,m
 2026-W44,Ro,lever,55,,,0.2182,0,,Engineering;Pharmacy;Operations,1
 2026-W44,Robinhood,greenhouse,151,,,0,0.9007,162000,Customer Care;ENG Infrastructure;Brokerage Engineering,6
 2026-W44,Roblox,greenhouse,271,,,0.0185,0.9262,269270,Software Engineering;Early Career FT - Engineering;Engineering,8
-2026-W44,Rocket Lab,greenhouse,540,,,0,0.7056,33670000,4015 USA Space Systems;1520 Space Systems BD;2244 Neutron - Propulsion,4
+2026-W44,Rocket Lab,greenhouse,539,,,0,0.705,33800000,4015 USA Space Systems;1520 Space Systems BD;2244 Neutron - Propulsion,4
 2026-W44,Roku,greenhouse,91,,,0,0,,383 - Ad Product;001- PIPELINE;225 - Advertising Engineering,7
 2026-W44,Roofstock,greenhouse,9,,,0,0,,Central Operations;Property Services;Legal,1
 2026-W44,Rover,lever,31,,,0.2258,0,,Engineering;Product;Information Technology,2
