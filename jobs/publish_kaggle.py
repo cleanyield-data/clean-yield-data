@@ -79,7 +79,13 @@ def main() -> int:
             if exists:
                 kaggle("datasets", "version", "-p", tmp, "-m", f"Week {week}")
             else:
-                kaggle("datasets", "create", "-p", tmp, "--public")
+                res = kaggle("datasets", "create", "-p", tmp, "--public", check=False)
+                if res.returncode != 0 or "already" in (res.stdout + res.stderr).lower():
+                    # Si ya existía (el chequeo de estado puede fallar con 403 mientras Kaggle procesa), se versiona.
+                    if "already" not in (res.stdout + res.stderr).lower():
+                        raise SystemExit("kaggle datasets create failed")
+                    kaggle("datasets", "version", "-p", tmp, "-m", f"Week {week}")
+                    exists = True
             print(f"Kaggle {'versioned' if exists else 'created'}: https://www.kaggle.com/datasets/{meta['id']}")
     return 0
 
