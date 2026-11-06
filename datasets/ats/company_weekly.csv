@@ -19,7 +19,7 @@ week,company,ats,open_jobs,new_jobs,closed_jobs,remote_share,with_salary_share,m
 2026-W44,Arize AI,greenhouse,27,,,0.8519,0,,Sales;Solutions Engineering;Engineering,2
 2026-W44,Articulate,lever,2,,,1,1,,GTM Effectiveness;Product Marketing,1
 2026-W44,Asana,greenhouse,108,,,0.037,0,,Product Engineering;Customer Success;Professional Services & Paid Support,10
-2026-W44,AssemblyAI,greenhouse,19,,,0.1579,0,,Sales;Customer Experience;Engineering,3
+2026-W44,AssemblyAI,greenhouse,18,,,0.1667,0,,Sales;Customer Experience;Engineering,3
 2026-W44,Astranis,greenhouse,186,,,0,1,100100,Payload Internships;Production & Manufacturing Internships;Software Internships,1
 2026-W44,Attentive,greenhouse,27,,,0,0,,Engineering;Customer Success;Sales,3
 2026-W44,Backblaze,greenhouse,33,,,0.9697,0,,Engineering;Production Systems;Security,5
@@ -192,7 +192,7 @@ week,company,ats,open_jobs,new_jobs,closed_jobs,remote_share,with_salary_share,m
 2026-W44,Mercury,greenhouse,79,,,0.8987,0.9747,193700,Engineering;Sales & Partnerships;People,1
 2026-W44,Metabase,lever,19,,,1,0.0526,,Engineering;Marketing and Growth;Success Engineering,2
 2026-W44,Mindbody,greenhouse,18,,,0,0,,Sales;Engineering;Product,6
-2026-W44,MinIO,greenhouse,46,,,0.8913,0,,Sales - Global Enterprise;Sales - Commercial;Marketing - BDR,9
+2026-W44,MinIO,greenhouse,47,,,0.8936,0,,Sales - Global Enterprise;Sales - Commercial;Marketing - BDR,9
 2026-W44,Mirakl,greenhouse,26,,,0.0385,0.0385,,G&A;Sales;Connect,5
 2026-W44,Misfits Market,greenhouse,65,,,0.0308,0,,Operations;Distribution;Safety,1
 2026-W44,Mixpanel,greenhouse,40,,,0.15,0.375,162500,Customer Engineering;Revenue;Engineering,7
