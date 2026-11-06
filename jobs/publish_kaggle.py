@@ -38,6 +38,20 @@ def build(folder: Path, dest: Path) -> dict:
             continue
         rel = f.relative_to(folder)
         shutil.copy2(f, dest / "_".join(rel.parts))
+    # Los recursos con comodín (p. ej. "weeks_YYYY-Www.csv") se expanden a los archivos reales; los que no existen
+    # se sacan (Kaggle rechaza la subida si un recurso no está).
+    resources = []
+    for r in meta.get("resources", []):
+        path = r.get("path", "")
+        if "YYYY" in path:
+            pattern = re.compile("^" + re.escape(path).replace("YYYY", r"\d{4}").replace("ww", r"\d{2}") + "$")
+            for f in sorted(dest.iterdir()):
+                if pattern.match(f.name):
+                    resources.append({**r, "path": f.name})
+        elif (dest / path).is_file():
+            resources.append(r)
+    if "resources" in meta:
+        meta["resources"] = resources
     (dest / "dataset-metadata.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False))
     return meta
 
