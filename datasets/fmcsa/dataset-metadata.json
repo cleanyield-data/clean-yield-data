@@ -1,0 +1,101 @@
+{
+    "title": "New US Trucking Companies Weekly (FMCSA)",
+    "subtitle": "New USDOT registrations every week, cleaned, from official FMCSA open data",
+    "id": "cleanyield/new-us-trucking-companies-weekly",
+    "licenses": [
+        {
+            "name": "CC0-1.0"
+        }
+    ],
+    "keywords": [
+        "transportation",
+        "business",
+        "united states",
+        "government",
+        "tabular"
+    ],
+    "description": "Filled by jobs/publish_kaggle.py with README.md (without the YAML header) at upload time.",
+    "resources": [
+        {
+            "path": "new_carriers_latest.csv",
+            "description": "New USDOT registrations of the last complete ISO week (Monday-Sunday, UTC).",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "week",
+                        "description": "ISO week of registration, e.g. 2026-W44",
+                        "type": "string"
+                    },
+                    {
+                        "name": "dot_number",
+                        "description": "USDOT number",
+                        "type": "string"
+                    },
+                    {
+                        "name": "add_date",
+                        "description": "Date the USDOT number was added (YYYY-MM-DD)",
+                        "type": "datetime"
+                    },
+                    {
+                        "name": "legal_name",
+                        "description": "Legal name, only for corporations; empty otherwise",
+                        "type": "string"
+                    },
+                    {
+                        "name": "carrier_operation",
+                        "description": "interstate, intrastate_hazmat or intrastate_non_hazmat",
+                        "type": "string"
+                    },
+                    {
+                        "name": "classification",
+                        "description": "FMCSA operation classification",
+                        "type": "string"
+                    },
+                    {
+                        "name": "phy_city",
+                        "description": "City of the physical address",
+                        "type": "string"
+                    },
+                    {
+                        "name": "phy_state",
+                        "description": "State of the physical address",
+                        "type": "string"
+                    },
+                    {
+                        "name": "power_units",
+                        "description": "Trucks + buses reported (truck_units + bus_units)",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "drivers",
+                        "description": "Total drivers reported",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hazmat",
+                        "description": "Reports hazardous materials",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "status",
+                        "description": "FMCSA status code: A active, I inactive, P pending",
+                        "type": "string"
+                    },
+                    {
+                        "name": "safer_url",
+                        "description": "Official SAFER Company Snapshot link",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "weeks_YYYY-Www.csv",
+            "description": "One file per ISO week (weeks/ folder in the repository), same columns as new_carriers_latest.csv."
+        },
+        {
+            "path": "weekly_summary.csv",
+            "description": "One row per week x state x carrier operation: total, fleet-size buckets by power units (fleet_0_or_unknown, fleet_1, fleet_2_5, fleet_6_20, fleet_21_plus) and hazmat_share."
+        }
+    ]
+}

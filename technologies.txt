@@ -1,0 +1,74 @@
+# Technologies detected in job titles and descriptions (Weekly Tech Hiring Index).
+# Copied from the Clean Yield ATS Jobs Scraper dictionary. One per line: name<TAB>regex<TAB>flags.
+# Patterns are word-boundary regular expressions; a job can match several. Changing this list breaks
+# week-over-week comparability: log any change in datasets/ats/CHANGELOG.md.
+Python	\bpython\b	i
+Java	\bJava\b(?!\s*Script)	
+JavaScript	\bjavascript\b	i
+TypeScript	\btypescript\b	i
+Go	\bGolang\b|\bGo\b(?=\s*[,/)]|\s+(?:and|or)\s+[A-Z])	
+Rust	\bRust\b	
+C++	\bC\+\+	
+C#	\bC#	
+Ruby	\bRuby\b	
+Ruby on Rails	\bRails\b	
+PHP	\bPHP\b	
+Kotlin	\bkotlin\b	i
+Swift	\bSwift\b(?!ly)	
+Scala	\bScala\b	
+Elixir	\bElixir\b	
+SQL	\bSQL\b	
+Node.js	\bnode\.?js\b	i
+React	\bReact(?:\.js|JS)?\b(?!\s+Native)	
+React Native	\bReact Native\b	
+Vue	\bVue(?:\.js)?\b	
+Angular	\bAngular\b	
+Next.js	\bnext\.js\b	i
+Django	\bDjango\b	
+Flask	\bFlask\b	
+FastAPI	\bfastapi\b	i
+Spring	\bSpring(?: Boot| Framework)\b	
+.NET	\.NET\b	
+GraphQL	\bgraphql\b	i
+Kubernetes	\bkubernetes\b|\bk8s\b	i
+Docker	\bdocker\b	i
+Terraform	\bterraform\b	i
+AWS	\bAWS\b|\bAmazon Web Services\b	
+GCP	\bGCP\b|\bGoogle Cloud\b	
+Azure	\bAzure\b	
+Kafka	\bKafka\b	
+Spark	\b(?:Apache )?Spark\b	
+Airflow	\bAirflow\b	
+dbt	\bdbt\b	
+Snowflake	\bSnowflake\b	
+Databricks	\bdatabricks\b	i
+BigQuery	\bbigquery\b	i
+Redshift	\bRedshift\b	
+PostgreSQL	\bpostgres(?:ql)?\b	i
+MySQL	\bmysql\b	i
+MongoDB	\bmongo(?:db)?\b	i
+Redis	\bRedis\b	
+Elasticsearch	\belasticsearch\b	i
+Linux	\bLinux\b	
+PyTorch	\bpytorch\b	i
+TensorFlow	\btensorflow\b	i
+LLMs	\bLLMs?\b	
+Pandas	\bpandas\b(?= |,|\/)	i
+Salesforce	\bSalesforce\b	
+HubSpot	\bhubspot\b	i
+Tableau	\bTableau\b	
+Looker	\bLooker\b	
+Power BI	\bPower ?BI\b	i
+Excel	\bExcel\b	
+Figma	\bFigma\b	
+Jira	\bJira\b	
+Git	\bGit(?:Hub|Lab)?\b	
+CI/CD	\bCI\/CD\b	i
+iOS	\biOS\b	
+Android	\bAndroid\b	
+Flutter	\bFlutter\b	
+Datadog	\bDatadog\b	
+Grafana	\bGrafana\b	
+Prometheus	\bPrometheus\b	
+Ansible	\bAnsible\b	
+Solidity	\bSolidity\b	

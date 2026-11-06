@@ -1,0 +1,79 @@
+{
+  "title": "Weekly Tech Hiring Index",
+  "subtitle": "Open jobs, new jobs and in-demand technologies per company, every week",
+  "id": "cleanyield/weekly-tech-hiring-index",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "keywords": [
+    "jobs and career",
+    "business",
+    "employment",
+    "time series analysis",
+    "tabular"
+  ],
+  "description": "Filled by jobs/publish_kaggle.py with README.md (without the YAML header) at upload time.",
+  "resources": [
+    {
+      "path": "tech_weekly.csv",
+      "description": "One row per ISO week and technology.",
+      "schema": {
+        "fields": [
+          {
+            "name": "week",
+            "description": "ISO week of the Tuesday snapshot, e.g. 2026-W45",
+            "type": "string"
+          },
+          {
+            "name": "technology",
+            "description": "Technology name from technologies.txt",
+            "type": "string"
+          },
+          {
+            "name": "jobs_mentioning",
+            "description": "Open jobs that mention it",
+            "type": "integer"
+          },
+          {
+            "name": "companies_mentioning",
+            "description": "Companies with at least one job mentioning it",
+            "type": "integer"
+          },
+          {
+            "name": "share_of_jobs",
+            "description": "jobs_mentioning / panel_open_jobs",
+            "type": "number"
+          },
+          {
+            "name": "change_vs_prev_week",
+            "description": "Difference in jobs_mentioning vs the previous week",
+            "type": "integer"
+          },
+          {
+            "name": "panel_open_jobs",
+            "description": "Total open jobs in the panel that week",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "path": "company_weekly.csv",
+      "description": "One row per ISO week and company: open, new and closed jobs, remote share, salary coverage, median annual USD salary, top departments, number of countries."
+    },
+    {
+      "path": "companies.csv",
+      "description": "The fixed company panel: company, ats, token (public board token) and added (first ISO week counted)."
+    },
+    {
+      "path": "technologies.txt",
+      "description": "The 70 technology patterns (name, regex, flags)."
+    },
+    {
+      "path": "CHANGELOG.md",
+      "description": "Changes to the panel and the method, with the week they start counting."
+    }
+  ]
+}

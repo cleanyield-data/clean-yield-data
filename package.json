@@ -1,0 +1,15 @@
+{
+  "name": "clean-yield-data",
+  "private": true,
+  "type": "module",
+  "description": "Weekly open datasets by Clean Yield: new US trucking companies (FMCSA) and the Weekly Tech Hiring Index.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test 'tests/*.test.mjs'",
+    "fmcsa": "node jobs/fmcsa.mjs",
+    "ats": "node jobs/ats.mjs",
+    "site": "node jobs/site.mjs",
+    "weekly": "node jobs/fmcsa.mjs && node jobs/ats.mjs && node jobs/site.mjs"
+  }
+}

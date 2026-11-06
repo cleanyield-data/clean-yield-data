@@ -1,0 +1,150 @@
+# Weekly publication: FMCSA new carriers + Weekly Tech Hiring Index → repo, Hugging Face, Kaggle and GitHub Pages.
+# Order matters: if any data step or control fails, nothing is committed or published that week.
+# Hugging Face, Kaggle and Pages are skipped with a warning while their secret / setting is missing.
+name: Publicación semanal
+
+on:
+  schedule:
+    - cron: '23 14 * * 2' # Tuesdays 14:23 UTC (11:23 Argentina)
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'ISO week to (re)build, e.g. 2026-W44. Empty = last complete week.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+
+concurrency:
+  group: semanal
+  cancel-in-progress: false
+
+env:
+  WEEK: ${{ inputs.week }}
+
+jobs:
+  semanal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      week: ${{ steps.week.outputs.week }}
+      pages: ${{ steps.pages.outputs.enabled }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install publishing tools
+        run: pip install --quiet huggingface_hub kaggle
+
+      - name: Tests
+        run: node --test 'tests/*.test.mjs'
+
+      - name: 1 · FMCSA new carriers
+        run: node jobs/fmcsa.mjs
+        env:
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+
+      - name: 2 · ATS hiring index
+        run: node jobs/ats.mjs
+
+      - name: 3 · Page data
+        run: node jobs/site.mjs
+
+      - name: Week
+        id: week
+        run: echo "week=$(cat datasets/WEEK)" >> "$GITHUB_OUTPUT"
+
+      - name: 4a · Commit data to the repository
+        run: |
+          git config user.name "clean-yield-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add datasets state site
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Semana ${{ steps.week.outputs.week }}"
+            git pull --rebase --quiet origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: 4b · Hugging Face (skipped without HF_TOKEN)
+        run: python jobs/publish_hf.py
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+
+      - name: 4c · Kaggle (skipped without KAGGLE_API_TOKEN or KAGGLE_USERNAME + KAGGLE_KEY)
+        run: python jobs/publish_kaggle.py
+        env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+
+      - name: Is GitHub Pages enabled (Source = GitHub Actions)?
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          build_type=$(gh api "repos/${{ github.repository }}/pages" --jq .build_type 2>/dev/null || true)
+          if [ "$build_type" = "workflow" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::warning title=GitHub Pages skipped::Pages is not enabled with Source = GitHub Actions (Settings → Pages). The page was NOT updated this week."
+          fi
+
+      - name: Package the page
+        if: steps.pages.outputs.enabled == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  pages:
+    needs: semanal
+    if: needs.semanal.outputs.pages == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: 4d · Deploy GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+  aviso:
+    needs: [semanal, pages]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 'Open, update or close the "Publicación semanal: falló" issue'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          FAILED: ${{ needs.semanal.result == 'failure' || needs.semanal.result == 'cancelled' || needs.pages.result == 'failure' }}
+          WEEK: ${{ needs.semanal.outputs.week }}
+        run: |
+          title="Publicación semanal: falló"
+          number=$(gh issue list --state open --search "\"$title\" in:title" --json number,title --jq ".[] | select(.title == \"$title\") | .number" | head -n1)
+          if [ "$FAILED" = "true" ]; then
+            body="La publicación semanal falló ($(date -u +%F)). No se publicó una semana rota. Detalle: $RUN_URL"
+            if [ -n "$number" ]; then
+              gh issue comment "$number" --body "$body"
+            else
+              gh issue create --title "$title" --body "$body" --assignee "${{ github.repository_owner }}" || gh issue create --title "$title" --body "$body"
+            fi
+          elif [ -n "$number" ]; then
+            gh issue close "$number" --comment "Resuelto: la semana ${WEEK:-actual} se publicó bien. $RUN_URL"
+          fi

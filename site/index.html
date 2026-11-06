@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Tech Hiring Index</title>
+<meta name="description" content="Which technologies are companies hiring for this week? Open jobs, new jobs and tech demand from public Greenhouse and Lever job boards, updated every Tuesday. Free data, CC BY 4.0.">
+<link rel="canonical" href="https://cleanyield-data.github.io/clean-yield-data/">
+<meta property="og:title" content="Weekly Tech Hiring Index">
+<meta property="og:description" content="Open jobs, new jobs and the technologies companies hire for, updated every week from public job boards.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Weekly Tech Hiring Index",
+  "description": "Weekly counts of open jobs, new jobs and technologies mentioned in job postings of a fixed panel of companies, from the public Greenhouse and Lever job board APIs.",
+  "url": "https://cleanyield-data.github.io/clean-yield-data/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": { "@type": "Organization", "name": "Clean Yield", "url": "https://apify.com/cleanyield" },
+  "temporalCoverage": "2026-10-26/..",
+  "distribution": [
+    { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://github.com/cleanyield-data/clean-yield-data/tree/main/datasets/ats" },
+    { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://huggingface.co/datasets/cleanyield/weekly-tech-hiring-index" }
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #fcfcfb;
+    --ink: #0b0b0b;
+    --ink-2: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --bar: #2a78d6;
+    --bar-track: #eceae4;
+    --link: #1d5fae;
+    --mock: #fff4d6;
+    --mock-ink: #6b4e00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121211;
+      --surface: #1a1a19;
+      --ink: #f0efec;
+      --ink-2: #c3c2b7;
+      --muted: #898781;
+      --grid: #2c2c2a;
+      --bar: #3987e5;
+      --bar-track: #262624;
+      --link: #7fb2f0;
+      --mock: #3a3020;
+      --mock-ink: #f3d68a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121211; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --bar: #3987e5; --bar-track: #262624; --link: #7fb2f0; --mock: #3a3020; --mock-ink: #f3d68a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+  .note { background: var(--mock); color: var(--mock-ink); border-radius: 8px; padding: 8px 12px; font-size: 14px; margin: 16px 0 0; }
+  .note:empty { display: none; }
+  .archive { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 14px; margin: 0; padding: 0; list-style: none; }
+  header h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--ink-2); max-width: 62ch; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 8px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 28px 0; }
+  .tile { background: var(--surface); border: 1px solid var(--grid); border-radius: 12px; padding: 16px; }
+  .tile .k { font-size: 13px; color: var(--ink-2); }
+  .tile .v { font-size: 28px; font-weight: 650; font-variant-numeric: tabular-nums; margin-top: 2px; }
+  .tile .d { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  section { background: var(--surface); border: 1px solid var(--grid); border-radius: 12px; padding: 20px 16px; margin-top: 16px; }
+  section h2 { font-size: 20px; margin: 0 0 4px; }
+  section .sub { color: var(--ink-2); font-size: 14px; margin: 0 0 16px; }
+  .bars { list-style: none; margin: 0; padding: 0; }
+  .bars li { display: grid; grid-template-columns: minmax(84px, 140px) 1fr 56px 64px; align-items: center; gap: 10px; padding: 5px 0; font-variant-numeric: tabular-nums; position: relative; }
+  .bars .name { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bars .track { display: block; height: 14px; background: var(--bar-track); border-radius: 4px; overflow: hidden; }
+  .bars .fill { display: block; height: 100%; background: var(--bar); border-radius: 0 4px 4px 0; }
+  .bars .num { font-size: 14px; text-align: right; }
+  .bars .chg { font-size: 13px; text-align: right; color: var(--ink-2); }
+  .bars li:hover .track, .bars li:focus-within .track { outline: 2px solid var(--grid); outline-offset: 2px; }
+  .bars li .tip {
+    display: none; position: absolute; left: 150px; top: -34px; z-index: 2; white-space: nowrap;
+    background: var(--ink); color: var(--surface); font-size: 13px; padding: 4px 8px; border-radius: 6px;
+  }
+  .bars li:hover .tip, .bars li:focus .tip { display: block; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 720px) {
+    .cols { grid-template-columns: 1fr; }
+    .tile .v { font-size: 24px; }
+    .bars li { grid-template-columns: 84px 1fr 48px 56px; gap: 8px; }
+    .bars li .tip { left: 0; }
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--grid); }
+  th { color: var(--ink-2); font-weight: 600; }
+  td.r, th.r { text-align: right; }
+  details { margin-top: 12px; }
+  summary { cursor: pointer; color: var(--link); font-size: 14px; }
+  .cta { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .cta a { display: block; text-decoration: none; color: var(--ink); border: 1px solid var(--grid); border-radius: 10px; padding: 14px; }
+  .cta a:hover { border-color: var(--bar); }
+  .cta b { display: block; color: var(--link); }
+  .cta span { font-size: 14px; color: var(--ink-2); }
+  footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Weekly Tech Hiring Index</h1>
+    <p>Which technologies are companies hiring for right now? Open jobs, new jobs and tech demand across a fixed panel of companies, read every week from their public Greenhouse and Lever job boards.</p>
+    <p class="meta" id="meta">Loading this week's data…</p>
+    <p class="note" id="note" role="note"></p>
+  </header>
+
+  <div class="tiles" id="tiles"></div>
+
+  <section aria-labelledby="t-tech">
+    <h2 id="t-tech">Most requested technologies</h2>
+    <p class="sub" id="tech-sub">Share of the panel's open jobs that mention each technology. Change = jobs vs. last week.</p>
+    <ul class="bars" id="tech"></ul>
+    <details>
+      <summary>View as table (top 20)</summary>
+      <table id="tech-table"><thead><tr><th>Technology</th><th class="r">Jobs</th><th class="r">Share</th><th class="r">Companies</th><th class="r">Change</th></tr></thead><tbody></tbody></table>
+    </details>
+  </section>
+
+  <div class="cols">
+    <section aria-labelledby="t-co">
+      <h2 id="t-co">Hiring fastest this week</h2>
+      <p class="sub" id="co-sub">New jobs posted since last week's snapshot.</p>
+      <table id="companies"><thead><tr><th>Company</th><th class="r" id="co-col">New</th><th class="r">Open</th></tr></thead><tbody></tbody></table>
+    </section>
+    <section aria-labelledby="t-fm">
+      <h2 id="t-fm">New US trucking companies</h2>
+      <p class="sub" id="fm-sub">New USDOT registrations last week, top states (official FMCSA data).</p>
+      <ul class="bars" id="fmcsa"></ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="t-get">
+    <h2 id="t-get">Get the data</h2>
+    <p class="sub">The index is free (CC BY 4.0) and the trucking list is public domain (CC0). Weekly CSVs with full history:</p>
+    <div class="cta">
+      <a href="https://github.com/cleanyield-data/clean-yield-data/tree/main/datasets"><b>Download the CSVs</b><span>GitHub repository: every week since the start, plus the code that builds them.</span></a>
+      <a href="https://huggingface.co/datasets/cleanyield/weekly-tech-hiring-index"><b>Hugging Face</b><span>Weekly Tech Hiring Index and New US Trucking Companies, ready for pandas and the datasets library.</span></a>
+      <a href="https://www.kaggle.com/datasets/cleanyield/weekly-tech-hiring-index"><b>Kaggle</b><span>Same weekly files, versioned every Tuesday.</span></a>
+    </div>
+    <p class="sub" style="margin:16px 0 8px">For the jobs themselves, any company, in real time:</p>
+    <div class="cta">
+      <a href="https://apify.com/cleanyield/ats-jobs-scraper"><b>ATS Jobs Scraper</b><span>Every open job of any company on Greenhouse, Lever or Ashby, with salaries and new-job alerts.</span></a>
+      <a href="https://apify.com/cleanyield/company-enrichment-from-website"><b>Company Enrichment</b><span>Emails, phones, tech stack and hiring signals from a company's website.</span></a>
+      <a href="https://apify.com/cleanyield/fmcsa-carrier-data"><b>FMCSA Carrier Data</b><span>Full records of new US carriers: authority, insurance, fleet, daily.</span></a>
+    </div>
+  </section>
+
+  <section aria-labelledby="t-m">
+    <h2 id="t-m">Methodology</h2>
+    <p class="sub" style="margin:0">A fixed panel of companies (list and changes in the repository) is read every Tuesday from the official public job board APIs of Greenhouse and Lever and labelled with the ISO week that just ended. Technologies are matched with a fixed list of 70 word-boundary patterns over job titles and descriptions; a job can mention several. "New" means a job ID not present in the previous week's snapshot. Only counts are published, never job texts. Trucking data: new USDOT numbers added Monday–Sunday in the FMCSA Company Census File, without any personal contact data. Code: <a href="https://github.com/cleanyield-data/clean-yield-data">github.com/cleanyield-data/clean-yield-data</a>.</p>
+  </section>
+
+  <section aria-labelledby="t-w">
+    <h2 id="t-w">Weekly archive</h2>
+    <p class="sub">Each week keeps a fixed page you can cite.</p>
+    <ul class="archive" id="archive"></ul>
+  </section>
+
+  <footer id="cite">Clean Yield · Not affiliated with Greenhouse, Lever, FMCSA or the companies listed.</footer>
+</div>
+<noscript><p style="text-align:center">This page needs JavaScript to draw the charts. The raw numbers are in <a href="data/index.json">data/index.json</a>.</p></noscript>
+
+<!--INDEX_DATA-->
+<script>
+// Data shape: see docs in the repository (jobs/site.mjs). Week pages embed it in window.INDEX_DATA;
+// the main page reads data/index.json, written every Tuesday by the weekly job.
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const fmt = (n) => Number(n).toLocaleString('en-US');
+const pct = (x) => (x * 100).toFixed(1) + '%';
+const sign = (n) => (n === null || n === undefined ? '–' : n > 0 ? '▲ +' + fmt(n) : n < 0 ? '▼ ' + fmt(n) : '0');
+const dateLabel = (iso) => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+
+function bars(el, rows, max, label) {
+  el.innerHTML = rows.map(([name, value, display, change, tip]) => `
+    <li tabindex="0">
+      <span class="name" title="${esc(name)}">${esc(name)}</span>
+      <span class="track" aria-hidden="true"><span class="fill" style="width:${Math.max(2, (value / max) * 100)}%"></span></span>
+      <span class="num">${display}</span>
+      <span class="chg">${change ?? ''}</span>
+      <span class="tip" role="tooltip">${esc(tip)}</span>
+    </li>`).join('');
+  el.setAttribute('aria-label', label);
+}
+
+function render(d) {
+  const t = d.totals;
+  document.getElementById('meta').textContent =
+    `Week ${d.week} (${dateLabel(d.weekStart)} – ${dateLabel(d.weekEnd)}) · job boards read ${dateLabel(d.snapshot)} · panel of ${fmt(d.panelCompanies)} companies`;
+  if (d.firstSnapshot) document.getElementById('note').textContent =
+    'First week of the index: this snapshot is the baseline. New and closed jobs and week-over-week changes start with the next update.';
+  const tiles = [
+    ['Open jobs in the panel', fmt(t.openJobs), t.openJobsPrev === null ? 'baseline week' : sign(t.openJobs - t.openJobsPrev) + ' vs last week'],
+    ['New jobs this week', t.newJobs === null ? '–' : fmt(t.newJobs), t.newJobs === null ? 'from next week' : 'not in last week\'s snapshot'],
+    ['Companies tracked', fmt(d.panelCompanies), 'Greenhouse + Lever'],
+    ['New US carriers', fmt(t.newCarriers), t.newCarriersPrev === null ? 'USDOT registrations last week' : sign(t.newCarriers - t.newCarriersPrev) + ' vs the week before'],
+  ];
+  document.getElementById('tiles').innerHTML = tiles.map(([k, v, s]) =>
+    `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${s}</div></div>`).join('');
+
+  const top = d.tech.slice(0, 15);
+  const maxShare = Math.max(...top.map((r) => r[2]));
+  bars(document.getElementById('tech'),
+    top.map(([n, jobs, share, cos, chg]) => [n, share, pct(share), sign(chg), `${n}: ${fmt(jobs)} jobs at ${cos} companies`]),
+    maxShare, 'Share of open jobs by technology');
+  document.querySelector('#tech-table tbody').innerHTML = d.tech.map(([n, jobs, share, cos, chg]) =>
+    `<tr><td>${esc(n)}</td><td class="r">${fmt(jobs)}</td><td class="r">${pct(share)}</td><td class="r">${cos}</td><td class="r">${sign(chg)}</td></tr>`).join('');
+
+  if (d.companiesBasis === 'open') {
+    document.getElementById('t-co').textContent = 'Most open jobs this week';
+    document.getElementById('co-sub').textContent = 'Largest job boards in the panel. The "hiring fastest" ranking (new jobs) starts next week.';
+    document.getElementById('co-col').textContent = 'Rank';
+    document.querySelector('#companies tbody').innerHTML = d.companies.map(([n, , open], i) =>
+      `<tr><td>${esc(n)}</td><td class="r">${i + 1}</td><td class="r">${fmt(open)}</td></tr>`).join('');
+  } else {
+    document.querySelector('#companies tbody').innerHTML = d.companies.map(([n, nw, open]) =>
+      `<tr><td>${esc(n)}</td><td class="r">+${fmt(nw)}</td><td class="r">${fmt(open)}</td></tr>`).join('');
+  }
+
+  const maxSt = Math.max(...d.fmcsaStates.map((r) => r[1]));
+  bars(document.getElementById('fmcsa'),
+    d.fmcsaStates.map(([s, n]) => [s, n, fmt(n), '', `${s}: ${fmt(n)} new USDOT numbers`]),
+    maxSt, 'New USDOT registrations by state');
+
+  document.getElementById('archive').innerHTML = d.weeks.map((w) => `<li><a href="weeks/${esc(w)}.html">${esc(w)}</a></li>`).join('');
+  document.getElementById('cite').textContent =
+    `Clean Yield · Not affiliated with Greenhouse, Lever, FMCSA or the companies listed. Cite as: "Clean Yield Weekly Tech Hiring Index, week ${d.week}" (CC BY 4.0).`;
+}
+
+if (window.INDEX_DATA) render(window.INDEX_DATA);
+else fetch('data/index.json', { cache: 'no-cache' }).then((r) => r.json()).then(render).catch(() => {
+  document.getElementById('meta').textContent = 'Could not load data/index.json.';
+});
+</script>
+</body>
+</html>
