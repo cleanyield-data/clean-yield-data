@@ -45,7 +45,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install publishing tools
-        run: pip install --quiet huggingface_hub kaggle
+        run: pip install --quiet huggingface_hub kaggle six
 
       - name: Tests
         run: node --test 'tests/*.test.mjs'
