@@ -55,7 +55,7 @@ week,company,ats,open_jobs,new_jobs,closed_jobs,remote_share,with_salary_share,m
 2026-W44,Cleo,greenhouse,8,,,0.625,0,,Solutions;Engineering;Information Security,1
 2026-W44,Cloudbeds,greenhouse,35,,,0,0,,Onboarding;Customer Support;Regional - Mid-Market,9
 2026-W44,Cloudflare,greenhouse,462,,,0.0022,0,,Solution Engineering;Field Sales;Engineering,21
-2026-W44,Cloudinary,lever,10,,,0.3,0,,CTO;Customer Success;Go-To-Market (GTM),3
+2026-W44,Cloudinary,lever,9,,,0.3333,0,,CTO;Go-To-Market (GTM);Customer Success,3
 2026-W44,Clover Health,greenhouse,51,,,0.5686,0.9412,160000,Clover Home Care;Engineering;Product Management,2
 2026-W44,Coalition,greenhouse,49,,,0,0,,Engineering;Data;Security Sales,6
 2026-W44,Cockroach Labs,greenhouse,12,,,0.1667,0.5833,42510000,Sales;Engineering;Applications (General),5
@@ -85,7 +85,7 @@ week,company,ats,open_jobs,new_jobs,closed_jobs,remote_share,with_salary_share,m
 2026-W44,Dialpad,greenhouse,15,,,0.0667,0.2,,530 - MidMarket Sales;560 - Client Sales;535 - SMB Sales,4
 2026-W44,Discord,greenhouse,27,,,0.3704,0.963,220500,Product Engineering;Data Science & Engineering;Product Design,1
 2026-W44,Domino Data Lab,greenhouse,18,,,0.6667,0.6111,197500,Engineering;Solutions Engineering;General & Administrative,7
-2026-W44,DoorDash,greenhouse,439,,,0.0866,0.9727,270816000,112 Order Fulfillment;311 Autonomy;631 Autonomy Operations,3
+2026-W44,DoorDash,greenhouse,440,,,0.0864,0.9727,270816000,112 Order Fulfillment;311 Autonomy;631 Autonomy Operations,3
 2026-W44,Doximity,greenhouse,11,,,0.7273,0,,Data;Sales & Client Success;Legal,1
 2026-W44,Dremio,greenhouse,7,,,0.7143,0,,Engineering;Product;Unsure what to apply for? No worries! Submit your resume here.,2
 2026-W44,Dropbox,greenhouse,33,,,1,0.7576,144700,EPD;Direct Sales - AMER (Sub Team);Financial Planning and Analysis (Sub Team),7
@@ -222,7 +222,7 @@ week,company,ats,open_jobs,new_jobs,closed_jobs,remote_share,with_salary_share,m
 2026-W44,Oportun,greenhouse,30,,,0.2667,0,,Business Operations;Engineering;Data Science and Analytics,3
 2026-W44,Oscar Health,greenhouse,206,,,0.3058,0,,Provider Network;Oscar Medical Group;Member Programs,1
 2026-W44,Otter.ai,greenhouse,21,,,0.0476,0,,Engineering;Frontend;Marketing,1
-2026-W44,Oura,greenhouse,97,,,0.2887,0,,Supply Chain;Hardware;Finance,4
+2026-W44,Oura,greenhouse,96,,,0.2917,0,,Supply Chain;Hardware;Finance,4
 2026-W44,Outreach,lever,21,,,0.5714,0.5238,160000,Engineering;Sales;Product,3
 2026-W44,Pacaso,greenhouse,6,,,0.5,0,,Marketing;Operations;Revenue,2
 2026-W44,Pagaya,greenhouse,14,,,0,0.6429,160000,Avon.AI;Commercial;Partnerships,1

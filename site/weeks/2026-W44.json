@@ -6,7 +6,7 @@
  "panelCompanies": 359,
  "firstSnapshot": true,
  "totals": {
-  "openJobs": 36708,
+  "openJobs": 36707,
   "openJobsPrev": null,
   "newJobs": null,
   "closedJobs": null,
@@ -86,14 +86,14 @@
   ],
   [
    "LLMs",
-   2735,
+   2736,
    0.0745,
    265,
    null,
    [
     [
      "2026-W44",
-     2735,
+     2736,
      0.0745
     ]
    ]
@@ -129,14 +129,14 @@
   [
    "GCP",
    2564,
-   0.0698,
+   0.0699,
    217,
    null,
    [
     [
      "2026-W44",
      2564,
-     0.0698
+     0.0699
     ]
    ]
   ],
@@ -393,5 +393,5 @@
  "weeks": [
   "2026-W44"
  ],
- "generatedAt": "2026-11-06T21:43:58.754Z"
+ "generatedAt": "2026-11-06T21:46:31.887Z"
 }
