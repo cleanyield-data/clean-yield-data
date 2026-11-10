@@ -1,9 +1,9 @@
 {
-  "week": "2026-W44",
-  "snapshot": "2026-11-06",
+  "week": "2026-W45",
+  "snapshot": "2026-11-10",
   "panel": 359,
   "ok": 359,
   "failed": [],
-  "hasBaseline": false,
-  "openJobs": 36706
+  "hasBaseline": true,
+  "openJobs": 36628
 }

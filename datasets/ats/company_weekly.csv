@@ -358,3 +358,362 @@ week,company,ats,open_jobs,new_jobs,closed_jobs,remote_share,with_salary_share,m
 2026-W44,Zscaler,greenhouse,374,,,0.3636,0.4893,176375,Zero Trust Exchange;APJ Field Sales;EMEA Field Sales,25
 2026-W44,Zuora,greenhouse,35,,,0.1143,0.5714,206000,Engineering & TechOps;Corporate Information Technology;Marketing,7
 2026-W44,Zus Health,lever,6,,,0.5,0.8333,185000,Commercial;Engineering;G&A,1
+2026-W45,15Five,lever,4,1,0,1,1,,Revenue Organization;R&D,1
+2026-W45,Abnormal Security,greenhouse,87,5,4,0.8736,0.5517,171125,Enterprise;Sales Management;Sales Development,11
+2026-W45,Adyen,greenhouse,249,9,15,0,0.004,,Development;Account Management;Merchant Operations,18
+2026-W45,Affirm,greenhouse,212,10,18,0.9623,0,,Consumer Engineering;Infrastructure Platform Eng;Checkout,5
+2026-W45,Agoda,greenhouse,357,29,13,0,0,,Supply;Information Technology;Marketing,14
+2026-W45,Airbnb,greenhouse,202,10,12,0.7327,0.8218,180000,Software Engineering;Community Support;Business Development,19
+2026-W45,Airtable,greenhouse,6,1,0,0.8333,0.6667,,Sales;Customer Success & Services;Marketing,1
+2026-W45,Algolia,greenhouse,27,0,1,0.1481,1,148468,Direct Sales;R&D;Partners & Alliances,6
+2026-W45,Alloy,greenhouse,31,1,1,0.2258,0,,Engineering;Technical Solutions;Sales,2
+2026-W45,Amperity,greenhouse,15,0,0,0.2667,0,,Engineering;Sales;G&A,3
+2026-W45,Amwell,greenhouse,6,0,0,0.6667,0,,Marketing;Clinical Services;Hosting,2
+2026-W45,Anchorage Digital,lever,23,0,0,1,0,,Global Markets;Engineering;Global Operations,3
+2026-W45,Anduril,greenhouse,2574,77,98,0.0101,0.9297,171500,Hardware Operations : Supply Chain : Product Sourcing Engineering;Manufacturing : Manufacturing Engineering : Manufacturing Engineering;Hardware Platform : Hardware Engineering Services,10
+2026-W45,Anthropic,greenhouse,676,26,22,0.105,0.8639,345000,Sales;AI Research & Engineering;Applied AI,14
+2026-W45,Apollo.io,greenhouse,46,0,4,0.4783,0.7391,53573000,Sales;Engineering;People,5
+2026-W45,AppLovin,greenhouse,42,3,4,0.0238,0.6667,405600000,Business Development - Consumer;Platform Engineering;Growth Marketing,5
+2026-W45,AppsFlyer,greenhouse,53,1,1,0,0,,R&D;Finance;Product,10
+2026-W45,Arize AI,greenhouse,28,1,0,0.8571,0,,Sales;Solutions Engineering;Engineering,2
+2026-W45,Articulate,lever,1,0,1,1,1,,Product Marketing,1
+2026-W45,Asana,greenhouse,107,7,8,0.0374,0,,Product Engineering;Professional Services & Paid Support;Product Management,10
+2026-W45,AssemblyAI,greenhouse,19,2,1,0.1579,0,,Sales;Customer Experience;Marketing,3
+2026-W45,Astranis,greenhouse,187,6,5,0,1,100100,Payload Internships;Production & Manufacturing Internships;Software Internships,1
+2026-W45,Attentive,greenhouse,27,0,0,0,0,,Engineering;Customer Success;Sales,3
+2026-W45,Backblaze,greenhouse,33,1,1,0.9697,0,,Engineering;Production Systems;Security,5
+2026-W45,Bandwidth,greenhouse,26,0,0,0,0.0385,,Sales;Customer Operations;Software Delivery,2
+2026-W45,Bazaarvoice,lever,11,0,0,0.2727,0.8182,175453,Global Revenue;Content and Creators;Client Services,5
+2026-W45,Betterment,greenhouse,27,2,1,0,0,,Engineering;Marketing;Platform Engineering,1
+2026-W45,Bill.com,greenhouse,37,0,5,0,1,40638000,Revenue;Engineering;Finance,1
+2026-W45,Bird,greenhouse,28,0,0,0.0714,0.0357,,Contractor;Operations;CL: Field Operations,2
+2026-W45,BlaBlaCar,lever,6,1,1,0,0,,Engineering;General Administration;Marketing,2
+2026-W45,Blend,greenhouse,11,0,0,0,0,,Engineering- Blend Labs;Finance- Blend Labs;Product- Blend Labs,1
+2026-W45,Block,greenhouse,197,8,10,0,0.4416,230650,20213 S&M - Sales - Square Outside;20249 S&M - Sales - Square Field Sales;20229 S&M - Sales - Commerce Enterprise and Mid,6
+2026-W45,Bombas,greenhouse,7,1,0,0,0,,Sourcing;Accounting;Customer Insights,1
+2026-W45,Box,greenhouse,143,13,7,0.035,0.5455,177750,Box Consulting;Customer Success;Sales Engineering,5
+2026-W45,Branch,greenhouse,2,0,0,1,0,,Data;Sales,1
+2026-W45,Braze,greenhouse,357,6,8,0.0028,0,,Sales;Engineering;Customer Experience,14
+2026-W45,Brex,greenhouse,276,15,6,0.0036,0,,Sales;Engineering;People,3
+2026-W45,Cabify,greenhouse,51,1,1,0,0,,Customer Experience & Operations;B2B;People,5
+2026-W45,Calendly,greenhouse,7,0,0,0.7143,1,266885,Product;Engineering;Marketing,1
+2026-W45,Calm,greenhouse,2,1,0,1,0,,Consumer  DTC Product;People,1
+2026-W45,Canvas Medical,lever,6,0,0,0.8333,1,167500,Engineering;Revenue,1
+2026-W45,CarGurus,greenhouse,40,0,3,0.025,1,128250,Engineering & Technology;Sales & Revenue;Marketing & Content,2
+2026-W45,Carta,greenhouse,78,0,1,0,0,,Carta Law;Carta Law Contracts;Account Executive,8
+2026-W45,Cato Networks,greenhouse,125,13,6,0,0,,Engineering - SSE;Sales Engineer EMEA;Sales - Regional Sales Director,18
+2026-W45,Celonis,greenhouse,242,18,9,0.0826,0.1942,176500,Value Engineering;Services;Sales,15
+2026-W45,Chainguard,greenhouse,108,11,4,1,0.3241,170500,R&D Engineering;Product Security;Sales Engineering,12
+2026-W45,Checkr,greenhouse,39,6,6,0.0256,1,175000,Finance;Engineering;Operations,1
+2026-W45,Chime,greenhouse,67,2,7,0.0448,1,181000,Growth Marketing;Platform Engineering;Member Experience Engineering,1
+2026-W45,ChowNow,lever,7,0,8,1,0,,Finance;Sales;Marketing,1
+2026-W45,CircleCI,greenhouse,16,0,0,0.5625,1,152500,Sales;Engineering;Engineering - Product Experience,4
+2026-W45,Clara,greenhouse,157,9,6,0,0,,Sales/ GTM;Engineering/ Builders;Operations,13
+2026-W45,ClassPass,greenhouse,50,3,2,0,0,,Sales;Marketing;Engineering,14
+2026-W45,CLEAR,greenhouse,60,1,2,0,0,,Engineering;Sales and Business Development;Aviation,1
+2026-W45,Cleo,greenhouse,9,1,0,0.6667,0,,Solutions;Engineering;Information Security,1
+2026-W45,Cloudbeds,greenhouse,36,1,0,0,0,,Onboarding;Customer Support;Regional - Mid-Market,9
+2026-W45,Cloudflare,greenhouse,469,17,10,0,0,,Field Sales;Engineering;Solution Engineering,21
+2026-W45,Cloudinary,lever,8,0,1,0.25,0,,CTO;Customer Success;Go-To-Market (GTM),3
+2026-W45,Clover Health,greenhouse,47,3,7,0.5532,0.8936,160000,Clover Home Care;Engineering;Product Management,2
+2026-W45,Coalition,greenhouse,44,2,7,0,0,,Engineering;Data;Security Sales,6
+2026-W45,Cockroach Labs,greenhouse,12,1,1,0.25,0.6667,45103500,Engineering;Sales;Applications (General),5
+2026-W45,Coinbase,greenhouse,285,7,6,0.7298,0.9193,165853,Customer Experience;Internships & Emerging Talent Positions;Engineering - Backend,13
+2026-W45,Collective Health,greenhouse,3,1,1,0.3333,1,,Contractors;Customer Experience;Health Plan Operations,1
+2026-W45,Collibra,greenhouse,25,1,0,0.48,0,,Customer Solutions and Services;Engineering;People Team,6
+2026-W45,commercetools,greenhouse,32,0,3,0.0313,0.2813,135000,Engineering;Marketing;Customer,5
+2026-W45,Commvault,greenhouse,54,2,5,0,0.3333,139325,Field Sales Rep - Front Line;Clumio - R&D;Business Technology - IT Data Ops,12
+2026-W45,ComplyAdvantage,greenhouse,16,1,0,0,0,,Commercial;Marketing;Finance,5
+2026-W45,Consensys,greenhouse,11,0,1,1,0.7273,164521,Marketing;Corporate;MetaMask,1
+2026-W45,Contentful,greenhouse,31,2,0,0,0,,Sales;Engineering;Customer Experience,6
+2026-W45,Contentsquare,lever,29,2,2,0.3448,0.2414,200000,"Sales;Customer Success;Engineering, Product, and Design",11
+2026-W45,Contentstack,greenhouse,12,1,0,0.4167,0,,Product Development Engineering;Product Development;Business Development,3
+2026-W45,CoreWeave,greenhouse,303,15,7,0.0165,0,,Technology;Finance;Global Field Organization,4
+2026-W45,Coursera,greenhouse,40,1,1,0,0,,Sales;Customer Success;Partner Success Services,11
+2026-W45,CRED,lever,14,1,0,0,0,,Prefr;business;product & growth,1
+2026-W45,Cribl,greenhouse,82,7,2,1,0.8659,40300000,Sales;Engineering;IT & Security,13
+2026-W45,Culture Amp,greenhouse,31,4,5,0,0.4839,145000,Sales;CSSX;CX - People Science,4
+2026-W45,Current,greenhouse,7,0,0,1,0,,Technology;Growth;Strategy,0
+2026-W45,Customer.io,greenhouse,26,4,2,1,0,,Engineering;Sales;Business Operations,1
+2026-W45,Databricks,greenhouse,914,18,31,0.0853,0.5142,216104,Engineering - Pipeline;Professional Services Operations;Enterprise Sales,27
+2026-W45,Datadog,greenhouse,395,14,17,0.1443,0.5468,144500,Enterprise Sales;Enterprise Sales Engineering;People,23
+2026-W45,Dataiku,greenhouse,14,0,1,0.6429,0.3571,210500,Account Executives;Engineering;Corporate Strategy,4
+2026-W45,Deliveroo,greenhouse,194,11,16,0,0.1186,44372,Engineering (Ads);Commercial Italy;SMB Hub,8
+2026-W45,Descript,greenhouse,10,1,0,1,0,,Engineering;Marketing;Product & Design,1
+2026-W45,Despegar,lever,116,16,21,0.0259,0.0086,,Commercial;Global Partners;IT & UX,8
+2026-W45,Dialpad,greenhouse,15,0,0,0.0667,0.2667,,530 - MidMarket Sales;560 - Client Sales;535 - SMB Sales,4
+2026-W45,Discord,greenhouse,26,1,2,0.3462,0.9615,220500,Data Science & Engineering;Product Design;Product Engineering,1
+2026-W45,Domino Data Lab,greenhouse,18,0,0,0.6667,0.6111,197500,Engineering;Solutions Engineering;General & Administrative,7
+2026-W45,DoorDash,greenhouse,442,19,17,0.086,0.9706,270816000,112 Order Fulfillment;311 Autonomy;631 Autonomy Operations,3
+2026-W45,Doximity,greenhouse,13,3,1,0.6154,0,,Data;Sales & Client Success;Locum Tenens,1
+2026-W45,Dremio,greenhouse,7,0,0,0.7143,0,,Engineering;Product;Unsure what to apply for? No worries! Submit your resume here.,2
+2026-W45,Dropbox,greenhouse,38,6,1,1,0.7895,151892,EPD;Security (Sub Team);Financial Planning and Analysis (Sub Team),7
+2026-W45,Druva,greenhouse,27,0,0,0.037,0,,Sales Engineering;Channel;Cloud Native,4
+2026-W45,Duolingo,greenhouse,61,3,1,0.0328,1,191050,Software Engineering;Marketing and Communications;Product Management,5
+2026-W45,EarnIn,greenhouse,27,0,5,0.0741,0,,Engineering;Product;Analytics,5
+2026-W45,EBANX,greenhouse,36,2,2,0.0556,0,,"Product;Legal, Tax, Regulatory & Corporate Affairs;Software Engineering",8
+2026-W45,Elastic,greenhouse,428,16,11,0,0.764,126282,Platform - Elasticsearch;Obs - Application Observability;Enterprise Search - Engineering,32
+2026-W45,Elation Health,greenhouse,18,0,0,1,0,,Customer Support;Customer Success;Product Design,2
+2026-W45,Entrata,lever,21,1,4,0.4762,0.8571,116412,Customer Operations;Revenue Platform;Research and Development,4
+2026-W45,Epic Games,greenhouse,134,7,3,0,0.3731,220228,Engineering Specialist;Engineering Generalist;Art,5
+2026-W45,Ethos,greenhouse,2,1,0,1,0,,Customer Success,0
+2026-W45,Everlywell,lever,16,0,1,0.6875,0.0625,,Remote Care Services;Enterprise;Consumer,1
+2026-W45,Faire,greenhouse,69,5,1,0.0145,0,,Algorithms & Data;Engineering;Marketing,3
+2026-W45,Farfetch,lever,46,4,3,0.0435,0,,Farfetch - Technology;Farfetch - Creative Operations;Farfetch - Business Services,6
+2026-W45,Fastly,greenhouse,54,3,6,0.3333,0,,Legal;Customer Security - CSOC;Product Management,6
+2026-W45,Figma,greenhouse,143,6,8,0,0.6503,56680000,Sales;Engineering;Design,11
+2026-W45,Figure,greenhouse,22,2,2,0.5,0,,Finance;Customer Support Center;Legal,1
+2026-W45,Fintual,lever,2,0,0,0,0,,Legal y Regulatorio;Producto,2
+2026-W45,Fireblocks,greenhouse,23,0,3,0,0,,Sales;Customer Operations;R&D,9
+2026-W45,Fivetran,greenhouse,176,27,9,0.233,0.7102,192411,Engineering Department;Sales Department;Marketing Department,11
+2026-W45,Flatiron Health,greenhouse,25,3,2,0.16,0,,Engineering;Business Development and Sales;Medical and Clinical,4
+2026-W45,Flexport,greenhouse,188,2,6,0.0266,0.3723,102250,"Sales;Ocean Gateway Operations;Sales, Enterprise",26
+2026-W45,Flix,greenhouse,165,11,7,0,0,,"IT & Engineering;FlixTrain Office;Finance, Legal & Procurement",14
+2026-W45,Formation Bio,greenhouse,24,0,0,0,0,,Engineering;Business Development;Data Science,1
+2026-W45,Formlabs,greenhouse,250,22,9,0,0.728,157500,Hardware Engineering;Materials Engineering;Manufacturing,6
+2026-W45,Forter,greenhouse,20,0,5,0.1,0,,Customer Success;Enterprise Sales;Business Development,5
+2026-W45,FourKites,greenhouse,16,0,0,0.875,0,,"Engineering, India;Customer Success, North America;Marketing, North America",2
+2026-W45,Freenome,greenhouse,29,0,0,0.5862,0,,Computational Science;Engineering;Sales,1
+2026-W45,Fundrise,lever,2,0,0,1,1,,Accounting & Finance;Real Estate,1
+2026-W45,Galileo,greenhouse,11,0,1,0.5455,0,,Clinical;BD/Sales;People,1
+2026-W45,Garner Health,greenhouse,62,0,0,0.4355,0,,Engineering;Revenue;Research,1
+2026-W45,Gemini,greenhouse,29,2,0,0.4138,0,,Tooling;Marketing;Predictions,2
+2026-W45,Generate Biomedicines,greenhouse,25,2,0,0.28,0.96,188500,Clinical Development;Preclinical Discovery;Technology,1
+2026-W45,GetYourGuide,greenhouse,0,0,68,,,,,0
+2026-W45,Ghost,greenhouse,5,0,0,0,0,,Sales;Finance,1
+2026-W45,Ginkgo Bioworks,greenhouse,19,0,1,0.0526,0,,Automation Software;Datapoints Small Molecule Developability;Automation Hardware Engineering,1
+2026-W45,GitLab,greenhouse,252,18,12,0.8889,0.4484,184060,SA;EMEA - Enterprise;Platforms Engineering,21
+2026-W45,Glossier,greenhouse,22,0,2,0.0909,0,,Retail (Stores);Product Development;Brand,2
+2026-W45,GOAT,greenhouse,19,2,1,0.1053,0.6842,38314,Operations;Marcom;Retail,1
+2026-W45,GoCardless,greenhouse,29,3,0,0,0,,Product Development;Sales;Finance,4
+2026-W45,GoDaddy,greenhouse,29,3,4,0,0.5862,45435000,Engineering;IT Ops;Business Development,8
+2026-W45,Gong,greenhouse,84,2,3,0.131,0,,New Business;Engineering;Customer Success Managers,6
+2026-W45,Gopuff,lever,785,6,3,0.0064,0.0025,,BevMo!;Field Operations;Starbucks,2
+2026-W45,Grafana Labs,greenhouse,144,13,3,1,0,,Product;R&D: Grafana;Product Management,13
+2026-W45,Graphcore,greenhouse,201,1,6,0,0,,Software Ops;PTD;SW Device,5
+2026-W45,Greenhouse,greenhouse,19,2,2,0.5263,0,,Ecosystem;Strategic Consulting;Account Executive,5
+2026-W45,Groupon,greenhouse,24,0,2,0.2083,0,,Marketing;Sales;Commercial,5
+2026-W45,Groww,greenhouse,9,0,0,0,0,,Growth;Private Wealth;Compliance,1
+2026-W45,Guild,greenhouse,4,0,0,0,0,,Finance & IT;Marketing;People,1
+2026-W45,Gusto,greenhouse,80,3,7,0.125,0,,Engineering;Customer Experience;Sales,1
+2026-W45,Harry's,greenhouse,11,0,2,0,0,,Centralized Insights and Analytics;Digital Product;Growth Marketing,1
+2026-W45,Healthie,greenhouse,17,0,1,0.2941,0,,Engineering;Marketing;Customer Success,1
+2026-W45,HelloFresh,greenhouse,374,23,29,0,0.4759,61646,Supply Chain Management & Operations;Marketing;Tech,12
+2026-W45,Hermeus,lever,80,1,0,0,1,116025,Engineering;Internships;Manufacturing,1
+2026-W45,HiddenLayer,greenhouse,20,0,0,0.85,0,,Sales;Engineering;Product Management,3
+2026-W45,Highnote,greenhouse,4,0,0,0.25,0,,Software Engineering;Finance;Sales,1
+2026-W45,Honeycomb,greenhouse,22,0,0,1,1,194670,Engineering;Sales;Data,3
+2026-W45,Honor,greenhouse,16,4,1,0.75,0.625,193800,Owned & Operated;Engineering;Care Operations,1
+2026-W45,Hootsuite,greenhouse,11,2,0,0,0.5455,49743,Development;Enterprise Sales;Finance,5
+2026-W45,Houzz,lever,6,0,0,0.3333,0,,Product;Data;Design & Marketing,1
+2026-W45,HubSpot,greenhouse,122,8,8,0.3852,0.582,116401,Sales;Account Management;Operations,14
+2026-W45,Hudl,greenhouse,41,0,7,0.1463,0.878,91093,Elite Sales;Product;Competitive Sales,6
+2026-W45,Huntress,greenhouse,46,7,2,0.087,0,,Account Management;Security Analysis;Platform Engineering,4
+2026-W45,Imbue,greenhouse,2,0,0,0,0,,Marketing;Product,1
+2026-W45,Imply,greenhouse,5,0,0,0,0,,Applications;Druid Query;Engineering,1
+2026-W45,Included Health,lever,46,0,3,1,0.0435,,Clinical Strategy and Services;Behavioral Health;Clinical & Behavioral Health,1
+2026-W45,Inflection AI,greenhouse,4,0,0,0,0,,Engineering,1
+2026-W45,Instacart,greenhouse,92,7,6,0.9783,0.9783,156625,Software Engineering;Ad Sales;Product Management,3
+2026-W45,Instawork,greenhouse,54,0,1,0,0,,Robotics;Engineering;Sales,2
+2026-W45,Intercom,greenhouse,109,8,8,0.0367,0,,Sales;Customer Success & Solutions;Engineering,5
+2026-W45,IonQ,greenhouse,117,1,4,0.1368,0.453,171000,Compute - Engineering;Quantum Platform - Network & Security;Capella,7
+2026-W45,Isomorphic Labs,greenhouse,43,0,0,0,0,,DDMR;Tech;Central,2
+2026-W45,Jam City,lever,15,1,1,0,0,,Art;People;General Resume Submissions,2
+2026-W45,JetBrains,greenhouse,33,1,0,0.4545,0.1212,,GrowthBricks;IDEs;Innovation Hub,7
+2026-W45,JFrog,greenhouse,75,7,6,0.12,0,,Sales;Solutions Engineering;Marketing,10
+2026-W45,Jobandtalent,lever,36,0,2,0.2778,0.25,40276,Revenue;Finance;Tech,5
+2026-W45,Jumia,greenhouse,23,3,5,0,0,,Supply Chain;Commercial;Commercial - Account Management,7
+2026-W45,Jumio,greenhouse,14,1,0,1,0,,Machine Learning;112 - Tech Support;Engineering,5
+2026-W45,JumpCloud,lever,40,1,0,1,0,,Engineering;Customer Success;Product,6
+2026-W45,Justworks,greenhouse,111,2,1,0.1261,0,,Engineering;Sales;Product,3
+2026-W45,Kabam,lever,22,0,0,0,0.8636,92115,Game Engineering;Production;Design,2
+2026-W45,Kavak,lever,5,0,0,0,0,,Compliance;Cuenca;Engineering,2
+2026-W45,Khan Academy,greenhouse,3,0,0,1,0,,Design;Engineering;Khan Kids,1
+2026-W45,Klaviyo,greenhouse,148,0,4,0,0.9797,165000,Sales;Engineering;IT & Security,6
+2026-W45,Kodiak Robotics,greenhouse,52,1,6,0.0192,0.6731,187500,Integration;Manufacturing;Operations,1
+2026-W45,Komodo Health,greenhouse,18,1,4,0,0.8333,46150000,Sales;Engineering;Analytics Consulting & Insights,2
+2026-W45,Labelbox,greenhouse,10,0,0,0.2,0.8,207500,Alignerr Services;Engineering;Finance,2
+2026-W45,Lattice,greenhouse,6,0,0,1,0,,Product;Engineering,2
+2026-W45,LaunchDarkly,greenhouse,42,2,4,0.4762,0,,Sales;Finance;People,6
+2026-W45,Liftoff,greenhouse,23,2,1,0.6087,0,,Core Ops;Engineering;Exec & Legal,5
+2026-W45,Lightmatter,greenhouse,55,4,2,0,0.9818,200000,Photonics & Silicon Engineering;Product Engineering;Architecture,2
+2026-W45,Lithic,greenhouse,10,0,0,0.5,0,,Engineering;Finance;Risk & Compliance,1
+2026-W45,Loadsmart,lever,12,2,0,0.3333,0.5833,129500,Engineering;Marketing;Sales,4
+2026-W45,Lucid Motors,greenhouse,465,25,18,0,0.3634,136240,Field Service;Field Sales and Delivery;Operations & Planning,8
+2026-W45,Lucid Software,greenhouse,27,1,0,0.037,0,,Sales;Customer Operations;Customer Experience,3
+2026-W45,Luma Health,greenhouse,3,0,0,1,0,,Sales;Customer Success,1
+2026-W45,Lyft,greenhouse,156,3,14,0.0064,0,,Early Talent;AV & Fleet Operations;Legal,3
+2026-W45,Lyra Health,lever,486,10,7,0.323,0.1564,110262,Provider Network Development;Clinical Ops;Technology,19
+2026-W45,Match Group,lever,69,2,4,0,0.5942,145000,Tinder;Match Group;Eureka,10
+2026-W45,Maven Clinic,greenhouse,31,1,1,0.9355,0,,Core Engineering;Client Success;Member Growth Marketing,1
+2026-W45,Medium,greenhouse,3,0,0,1,1,,Design;Engineering,1
+2026-W45,Meesho,lever,50,0,3,0,0,,"Finance, Legal & PR;Tech;Fulfilment & Experience",1
+2026-W45,Mercury,greenhouse,75,3,7,0.9067,0.9867,203525,Engineering;Sales & Partnerships;People,1
+2026-W45,Metabase,lever,19,0,0,1,0.0526,,Engineering;Marketing and Growth;Success Engineering,2
+2026-W45,Mindbody,greenhouse,21,3,0,0,0,,Sales;Engineering;Product,7
+2026-W45,MinIO,greenhouse,47,0,0,0.8936,0,,Sales - Global Enterprise;Sales - Commercial;Marketing - BDR,9
+2026-W45,Mirakl,greenhouse,24,0,2,0.0417,0,,G&A;Sales;Connect,4
+2026-W45,Misfits Market,greenhouse,66,2,1,0.0303,0,,Operations;Distribution;Safety,1
+2026-W45,Mixpanel,greenhouse,41,4,3,0.1463,0.3902,187125,Customer Engineering;Revenue;Engineering,7
+2026-W45,Modern Health,greenhouse,2,0,0,1,1,,Engineering;Marketing,1
+2026-W45,MongoDB,greenhouse,373,9,12,0,0.3727,8008000,Sales Development;Sales Growth EMEA;Site Reliability Engineering,24
+2026-W45,Monzo,greenhouse,64,14,8,0.75,0,,Engineering;Customer Operations;Data,3
+2026-W45,Motive,greenhouse,4,0,0,0,0,,Account;Brand Experience,1
+2026-W45,Mozilla,greenhouse,103,3,13,1,0.7087,86279,Firefox;New Products;Infrastructure,11
+2026-W45,N26,greenhouse,35,4,5,0,0,,Complaints Management;Group Internal Audit;Finance,3
+2026-W45,Natera,greenhouse,211,16,25,0.1754,0.7725,178000,Oncology Sales;Molecular Biology Informatics & Statistics;Phlebotomy Solutions,2
+2026-W45,Navan,greenhouse,221,6,15,0.0905,0.4072,174488,Sales;Global Operations and Service (GOS);Engineering,10
+2026-W45,Neo4j,greenhouse,62,4,6,0.3387,0.1935,248750,Engineering;Sales Engineering;Direct Field Sales,7
+2026-W45,Neon,lever,9,2,0,0.7778,0,,Banco de Talentos;COO;Product & Marketing,1
+2026-W45,Netlify,greenhouse,5,1,0,1,0,,G&A;R&D;Marketing,0
+2026-W45,Netskope,greenhouse,116,2,3,0,0.4655,214375,Sales Representative;Sales Engineering;Cloud Data Path,23
+2026-W45,New Relic,greenhouse,42,2,7,0.4524,0.2857,38350000,Enterprise;Technical Solution Sales;Finance,9
+2026-W45,Nextdoor,greenhouse,21,1,1,0.381,0,,Engineering;Product Design;Sales,1
+2026-W45,NextRoll,greenhouse,6,1,0,1,0,,AdRoll - New Business Sales;Customer Success Management;Executive,2
+2026-W45,Nomi Health,lever,3,0,0,0.3333,0,,G&A;Nomi Network;R & D,1
+2026-W45,Nuro,greenhouse,96,4,2,0,0,,Autonomy;Fleet Infrastructure;Systems,1
+2026-W45,OfferUp,greenhouse,4,0,0,0.25,0,,Engineering;Sales,2
+2026-W45,Okta,greenhouse,377,16,12,0,0.6233,188000,SW Eng - Applications-674;Enterprise Sales-340;SW Eng - Infrastructure-672,16
+2026-W45,Olo,lever,13,1,0,1,0,,Engineering;Customer Experience;Sales,2
+2026-W45,Omada Health,greenhouse,18,1,1,1,0,,Employer Sales;Member Engineering;Architecture & Infrastructure,1
+2026-W45,One Medical,greenhouse,346,13,25,0,0,,Clinical;Allied Health;Patient Operations,1
+2026-W45,OpenTable,greenhouse,110,5,8,0.1091,0,,International RSS;Product Engineering;Diner Marketing,16
+2026-W45,Oportun,greenhouse,35,6,1,0.2857,0,,Business Operations;Engineering;Finance & Accounting,3
+2026-W45,Oscar Health,greenhouse,192,5,19,0.3229,0,,Member Programs;Oscar Medical Group;Insurance Operations,1
+2026-W45,Otter.ai,greenhouse,21,0,0,0.0476,0,,Engineering;Frontend;Marketing,1
+2026-W45,Oura,greenhouse,92,5,9,0.3261,0,,Supply Chain;Hardware;Finance,4
+2026-W45,Outreach,lever,16,0,5,0.6875,0.625,168750,Engineering;Sales;Product,3
+2026-W45,Pacaso,greenhouse,6,1,1,0.5,0,,Marketing;Operations;Revenue,2
+2026-W45,Pagaya,greenhouse,13,0,1,0,0.6923,160000,Avon.AI;Commercial;Partnerships,1
+2026-W45,PagerDuty,greenhouse,49,2,0,0.2041,0,,Customer Success;Sales;Finance,5
+2026-W45,Palantir Technologies,lever,304,3,4,0.0033,0,,Dev;Delta;Echo,11
+2026-W45,PandaDoc,greenhouse,11,0,0,1,0,,Product;Marketing;RevOps,1
+2026-W45,Parsley Health,greenhouse,5,0,0,0.8,0,,Clinical;Marketing;Sales,1
+2026-W45,PathAI,greenhouse,13,1,1,0.3077,0,,Engineering;Machine Learning;AI Product,1
+2026-W45,Payoneer,greenhouse,101,4,2,0.0594,0.0495,222000,GTM EMEA;Business Applications;GTM China,15
+2026-W45,Peloton,greenhouse,44,2,3,0,0.8182,4065569,Sales;Hardware;Software,5
+2026-W45,Pendo,greenhouse,20,0,3,0.1,0,,Engineering;Commercial;Customer Engineering,4
+2026-W45,Pie Insurance,greenhouse,25,0,2,0,1,112500,Claims;Business Development;Premium Audit,1
+2026-W45,Pigment,lever,125,3,5,0.224,0.272,123256,Business;Professional Services;Tech,9
+2026-W45,Pinterest,greenhouse,164,7,9,0.4817,0.7805,226273,EPD Ads and Ads Product;Data Engineering;Consumer Engineering,13
+2026-W45,Planet,greenhouse,120,4,8,0.2333,0.9417,117095,Pre-Sales and Services;Global Monitoring Solutions (SWE);Infrastructure and Operations,14
+2026-W45,PlanetScale,greenhouse,12,0,0,0.5833,0,,Marketing;Customer Engineering;Engineering,1
+2026-W45,project44,greenhouse,23,0,3,0.087,0,,Engineering;Professional Services;Network,4
+2026-W45,PsiQuantum,greenhouse,97,10,3,0.0206,0.8454,40293500,3320 - System Hardware Design;4565 - SubSystem Validation;3200 - Photonics Integration,4
+2026-W45,Public,greenhouse,3,0,0,0,0,,Business Development;Finance;Legal,1
+2026-W45,Pure Storage,greenhouse,375,30,12,0.1547,0.5333,198825,Sales;Engineering;Services & Support,24
+2026-W45,Qualtrics,greenhouse,106,8,10,0.2547,0.4717,119375,PGF;GTM Training & Enablement;Public Sector Sales,10
+2026-W45,QuintoAndar,greenhouse,103,12,4,0,0,,ForRent Post Contract;Engineering;Pre-Contract B2C,4
+2026-W45,Quip,greenhouse,5,0,0,0,0,,Marketing;Growth;Retail,1
+2026-W45,Raisin,greenhouse,32,2,1,0,0.125,,Customer Service;B2C Channels EU;Communications and PR,3
+2026-W45,Reddit,greenhouse,157,6,12,0.8025,0.7898,249800,Ads Product & Engineering;Sales;Consumer Engineering,5
+2026-W45,Relativity Space,greenhouse,405,9,10,0,0.9975,136000,Stage Manufacturing Support;Launch Build and Design;Propulsion Engineering,1
+2026-W45,Rent the Runway,greenhouse,25,2,3,0,0,,Operations;Finance;People,2
+2026-W45,Rigetti,lever,16,0,0,0.0625,0.875,196250,QPU;Systems & Services;Fabrication,1
+2026-W45,Riot Games,greenhouse,188,6,4,0,0,,CN Game Studio;League Studio;Riot Discovery Studio,9
+2026-W45,Ripple,greenhouse,120,8,4,0,0.5167,202500,Engineering;Service & Delivery;Finance,10
+2026-W45,Riskified,greenhouse,39,2,0,0,0,,Sales;Development;Business Technologies,8
+2026-W45,Ro,lever,54,0,1,0.2222,0,,Engineering;Pharmacy;Operations,1
+2026-W45,Robinhood,greenhouse,153,7,5,0,0.9085,162000,Customer Care;ENG Infrastructure;Brokerage Engineering,6
+2026-W45,Roblox,greenhouse,276,10,5,0.0181,0.9203,269270,Software Engineering;Early Career FT - Engineering;Engineering,9
+2026-W45,Rocket Lab,greenhouse,549,28,18,0,0.7031,34060000,4015 USA Space Systems;1520 Space Systems BD;2245 Neutron - LC3,4
+2026-W45,Roku,greenhouse,93,5,3,0,0,,383 - Ad Product;001- PIPELINE;003 - INTERN,7
+2026-W45,Roofstock,greenhouse,9,0,0,0,0,,Central Operations;Property Services;Legal,1
+2026-W45,Rover,lever,31,0,0,0.2258,0,,Engineering;Product;Information Technology,2
+2026-W45,Rubrik,greenhouse,149,5,6,0.1007,0.4027,202350,Sales;Engineering;Support,11
+2026-W45,Salesloft,greenhouse,24,2,2,0.375,0.375,97500,IT/Security;Engineering;Customer Success,3
+2026-W45,Samsara,greenhouse,314,10,8,0.8567,0.8471,147750,Customer Success;Account Development Representative;US Mid Market AE2,9
+2026-W45,Sana Benefits,lever,7,0,0,1,1,60320,Operations;Sana Care;Underwriting,1
+2026-W45,Scale AI,greenhouse,169,3,2,0,0.645,215280,Human Frontier Collective;Public Sector;Public Sector Engineering,7
+2026-W45,Science 37,greenhouse,59,0,0,0.0508,0,,Nursing Solutions Group;Clinical Operations;Commercial Team,1
+2026-W45,Scopely,greenhouse,168,11,9,0.256,0.2202,37398270,Live Games Portfolio;MonopolyGo;Scopely Explore,9
+2026-W45,SeatGeek,greenhouse,38,0,0,0.3947,0,,Software Engineering;Supply;Internships - R&D,1
+2026-W45,Shield AI,lever,670,28,18,0.0343,0.8343,190000,X-BAT Division;Hivemind Solutions Division;Aircraft Operations Division,17
+2026-W45,Showpad,greenhouse,20,0,4,0,0,,Engineering;Marketing;Sales,5
+2026-W45,Sigma Computing,greenhouse,82,3,0,0.0488,0,,Engineering;Customer Success;Sales,3
+2026-W45,Similarweb,greenhouse,59,4,3,0,0,,GTM;R&D;Marketing,6
+2026-W45,SimpliSafe,greenhouse,34,2,1,0.0588,0,,Engineering;Marketing;Customer Experience & Monitoring,2
+2026-W45,SingleStore,greenhouse,39,0,2,0,0,,Americas Enterpr and Comm Sales;Engine;Engineering,5
+2026-W45,Smartsheet,greenhouse,74,6,3,0.2162,0.3919,44037500,Engineering - Developers;Enterprise Sales;Platform,7
+2026-W45,Snorkel AI,greenhouse,43,2,1,0.3488,0.8605,252500,312 - Engineering;532 - Finance Ops;316 - Research,1
+2026-W45,SoFi,greenhouse,47,3,1,0.0213,0,,Infrastructure;Compliance;Accounting,1
+2026-W45,Solaris,greenhouse,18,2,2,0,0.8333,95244,Technology;Internal Audit;Anti Financial Crime,1
+2026-W45,Sonatype,lever,13,1,0,0.5385,0,,Engineering R&D;Sales - NA;Direct Cost,5
+2026-W45,SpaceX,greenhouse,2908,99,78,0.0062,0,,Starlink Enterprise Sales & Account Management;Application Software;Starlink Network Engineering,1
+2026-W45,Speechmatics,greenhouse,13,0,0,0,0.0769,,Machine Learning;Marketing;Engineering,4
+2026-W45,Spotify,lever,84,8,9,0.3333,0,,Engineering;Data and Analytics;Product,15
+2026-W45,Sprout Social,greenhouse,21,1,4,0.8095,0,,Sales;Engineering;Marketing,5
+2026-W45,Squarespace,greenhouse,21,0,0,0.0952,0,,Domains & Applications;Engineering;Marketing,2
+2026-W45,Stability AI,greenhouse,1,0,0,0,0,,Technical,1
+2026-W45,Staffbase,greenhouse,28,0,1,0.1786,0,,Engineering;Implementation Consulting;Account Executives,3
+2026-W45,Starburst,greenhouse,38,4,0,0,0.6053,167500,Engineering;Professional Services;Enterprise Sales,6
+2026-W45,StarTree,greenhouse,4,0,0,0.5,0,,Engineering;Tech Support,1
+2026-W45,StockX,greenhouse,35,0,0,0.1714,0,,"Operations, Supply Chain & Verification Centers;StockX Live;Engineering & Technology",3
+2026-W45,Stone,greenhouse,349,12,10,0,0,,Comercial;Engenharia & Tecnologia;Logística,1
+2026-W45,StreamNative,greenhouse,3,0,0,1,1,,Sales;Platform Engineering,0
+2026-W45,Stripe,greenhouse,775,30,22,0.1523,0,,1185 Account Executives (EMEA);5112 General University;1195 Account Executives (APAC),24
+2026-W45,Sumo Logic,greenhouse,19,1,0,0,0,,Sales Development;Software Engineering;Customer Success,5
+2026-W45,SumUp,greenhouse,341,13,15,0.0029,0,,Field Sales;Engineering;Finance,21
+2026-W45,Sweetgreen,greenhouse,74,5,3,0.027,0.9459,77000,Marketing;West Cary;Creative,2
+2026-W45,Swile,lever,30,0,1,0.1667,0,,Innovation;BUSINESS;Finance,2
+2026-W45,Sword Health,greenhouse,55,1,17,0.9818,0.9818,120007,Product & Development;Commercial Ops;Treatment,6
+2026-W45,Synthego,lever,5,0,0,0.2,1,119500,Operations;Development;General & Administrative,1
+2026-W45,Taboola,greenhouse,87,3,4,0,0.1954,158225,Advertising Sales;Advertising Account Management;Products and AI R&D,18
+2026-W45,Tailscale,greenhouse,76,6,2,0.8553,0.9868,175000,Sales;Engineering;Marketing,4
+2026-W45,Tala,lever,11,0,1,0.8182,0.1818,,Technology;Product;Risk Management,4
+2026-W45,Talkspace,greenhouse,21,1,3,0.9524,0,,Network & Clinical Quality;Technology;Operations,1
+2026-W45,Tanium,greenhouse,65,2,1,0.2923,0,,Engineering - Shared Services;Solution Engineering;Development Sales,9
+2026-W45,TaskRabbit,greenhouse,19,1,1,0.1053,0,,Engineering;Data;Marketing,3
+2026-W45,Tenstorrent,greenhouse,123,4,6,0,0,,Operations: Supply Chain;Experience: GTM;AI Hardware,12
+2026-W45,Textio,greenhouse,2,0,0,0,0,,General Application;Sales,1
+2026-W45,Thrive Market,greenhouse,17,0,2,0.8824,0,,Marketing;Product Design;Product Engineering,1
+2026-W45,Tide,greenhouse,78,4,8,0,0,,One Platform;UK/ Europe Region;Enablement,8
+2026-W45,Tinybird,lever,2,0,0,1,0.5,,Company;Marketing & Growth,1
+2026-W45,Toast,greenhouse,330,25,24,0.1545,0.8303,166500,Sales : Retail Sales AEs;Sales : Strategic Cuisines Sales AEs;Sales : SMB Field Sales AEs,7
+2026-W45,Together AI,greenhouse,80,3,1,0.025,0,,Engineering;Marketing;Research,5
+2026-W45,Toptal,lever,30,3,4,1,0,,Customer;Engineering;People,6
+2026-W45,Transmit Security,greenhouse,11,4,1,0,0,,Engineering;Customer Experience;IT,4
+2026-W45,Treasury Prime,greenhouse,2,0,0,0.5,1,,Engineering,1
+2026-W45,Tripadvisor,greenhouse,11,4,0,0,0,,Customer Service;Engineering & Technology;Data Science and Analytics,4
+2026-W45,TrueLayer,greenhouse,4,0,0,0,0,,Finance;Business Operations;Commercial,3
+2026-W45,Turing,greenhouse,48,5,1,0.1042,0,,Enterprise AI;Frontier AI;Platform,5
+2026-W45,Twilio,greenhouse,126,4,5,0.9921,0,,Sales;Engineering;Customer Support,13
+2026-W45,Twist Bioscience,greenhouse,47,2,1,0.2766,0.617,161428,"Sales, Marketing & Customer Support;Operations & Manufacturing;General & Administration",3
+2026-W45,Twitch,greenhouse,55,0,4,0,0.9455,183650,Community Growth;Platforms & Services;Marketing,2
+2026-W45,Typeform,greenhouse,6,0,0,1,0.3333,,Field;Information Technology;Marketing,3
+2026-W45,Uber Freight,greenhouse,92,5,9,0.0109,0,,Brokerage;Transportation Management;Customs,3
+2026-W45,Udemy,greenhouse,3,0,0,0.3333,0.3333,,Consumer Marketing;UB Sales - AE Management,2
+2026-W45,Upstart,greenhouse,81,5,12,0.9136,0.9877,193300,Engineering Department;Operations Department;Risk & Compliance Department,1
+2026-W45,Upwork,greenhouse,6,0,0,0.1667,0.6667,,People;Finance & Accounting;Marketing,3
+2026-W45,Veeva Systems,lever,855,8,29,0.8199,0,,Professional Services;Product Management & Alliances;Sales,24
+2026-W45,Vercel,greenhouse,87,0,0,0.023,0,,Engineering;Account Executive;Marketing,5
+2026-W45,Veriff,greenhouse,12,1,0,0.5,0,,Sales - North America;Product;Authentication & Identity,3
+2026-W45,Verkada,greenhouse,345,9,11,0,0.8203,195000,Solutions Engineering;Cameras;Field Marketing & Events,19
+2026-W45,Vestiaire Collective,lever,17,2,0,0,0,,Interns & Apprenticeships;Tech;Commercial,4
+2026-W45,Via,greenhouse,176,5,6,0.0227,0,,Field Operations;Engineering;Operations,8
+2026-W45,Vonage,greenhouse,25,1,7,0.28,0.2,53500,Carrier Management;API Sales Development;Apps BU Engineering,8
+2026-W45,VTEX,greenhouse,34,0,0,0,0,,Sales;Engineering;Core Marketing,7
+2026-W45,WalkMe,lever,25,0,1,0.04,0.12,,Customer Success Group;Sales;R&D,7
+2026-W45,Wallapop,greenhouse,4,0,0,0,0,,Product,1
+2026-W45,Wasabi,greenhouse,11,0,0,0,0,,Sales;Finance;Marketing - Partner,2
+2026-W45,Waymo,greenhouse,380,24,14,0.0211,0.9105,218269,Pipeline (N/A);CSI (7LV);Simulation (7XW),10
+2026-W45,Wealthfront,lever,22,0,1,0.3636,0,,Engineering;Data;Home Lending,1
+2026-W45,Weee!,greenhouse,19,0,1,0,0,,Warehouse Management;Fulfillment Center Operations;Local Marketplace,1
+2026-W45,Wellhub,greenhouse,79,1,3,0.3418,0.1266,114466,Technology and Product;Client Sales;New Markets,13
+2026-W45,Wikimedia Foundation,greenhouse,16,1,0,1,0,,Product & Technology;Communications;Advancement,0
+2026-W45,Wiz,greenhouse,113,3,2,0.5575,0.2743,164750,Field Sales;Channels;SE,17
+2026-W45,Wolt,greenhouse,188,7,24,0.0106,0.2021,2926,Order Fulfillment;Country Support;Merchant acquisition SMB,23
+2026-W45,Xepelin,lever,11,1,0,0,0,,Go-to-Market (GTM);BizOps;Revenue,2
+2026-W45,Yext,greenhouse,32,3,1,0.0313,0.4688,180000,(18) Technology;(62) Sales Development;(19) Product Management,6
+2026-W45,Yotpo,greenhouse,19,0,0,0,0,,Customer Success;R&D;Partners,5
+2026-W45,Yugabyte,greenhouse,14,0,0,0.2857,0,,Sales & Marketing;Technology;G&A,2
+2026-W45,Zeta,lever,28,0,0,0.1071,0,,CEO Office;People Corp;Production Operations,2
+2026-W45,ZipRecruiter,greenhouse,68,16,0,0.3676,0,,710 Tech;460 ISO - New Logo Sales;610 Product,1
+2026-W45,Zocdoc,greenhouse,64,2,2,0.25,0.7188,200000,Technology;Sales & Customer Success;Data & Analytics,2
+2026-W45,Zola,greenhouse,3,0,0,0,0,,Corporate;Finance;Product and Design,1
+2026-W45,ZoomInfo,greenhouse,92,3,2,0.1739,0.5,144540,820 R&G - Account Managers;816 New Sales - Account Executives;933 Engineering - ZI Products,4
+2026-W45,Zoox,lever,231,9,14,0,0.9048,223500,Software;Vehicle Development;Zoox Internships,2
+2026-W45,Zopa,lever,29,1,4,0.1034,0,,Engineering;Customer Operations;Auto,1
+2026-W45,Zscaler,greenhouse,377,20,17,0.366,0.4881,179450,Zero Trust Exchange;APJ Field Sales;EMEA Field Sales,26
+2026-W45,Zuora,greenhouse,37,4,2,0.1351,0.5676,206000,Engineering & TechOps;Marketing;Corporate Information Technology,7
+2026-W45,Zus Health,lever,6,0,0,0.5,0.8333,185000,Commercial;Engineering;G&A,1
