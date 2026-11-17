@@ -1,9 +1,28 @@
 {
-  "week": "2026-W45",
-  "snapshot": "2026-11-10",
+  "week": "2026-W46",
+  "snapshot": "2026-11-17",
   "panel": 359,
-  "ok": 359,
-  "failed": [],
+  "ok": 356,
+  "failed": [
+    {
+      "company": "ClassPass",
+      "ats": "greenhouse",
+      "token": "classpass",
+      "error": "HTTP 404 for https://boards-api.greenhouse.io/v1/boards/classpass/jobs?content=true&pay_transparency=true"
+    },
+    {
+      "company": "Mindbody",
+      "ats": "greenhouse",
+      "token": "mindbody",
+      "error": "HTTP 404 for https://boards-api.greenhouse.io/v1/boards/mindbody/jobs?content=true&pay_transparency=true"
+    },
+    {
+      "company": "Quip",
+      "ats": "greenhouse",
+      "token": "quip",
+      "error": "HTTP 404 for https://boards-api.greenhouse.io/v1/boards/quip/jobs?content=true&pay_transparency=true"
+    }
+  ],
   "hasBaseline": true,
-  "openJobs": 36628
+  "openJobs": 35620
 }
