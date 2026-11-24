@@ -1,8 +1,8 @@
 {
-  "week": "2026-W46",
-  "snapshot": "2026-11-17",
+  "week": "2026-W47",
+  "snapshot": "2026-11-24",
   "panel": 359,
-  "ok": 356,
+  "ok": 355,
   "failed": [
     {
       "company": "ClassPass",
@@ -21,8 +21,14 @@
       "ats": "greenhouse",
       "token": "quip",
       "error": "HTTP 404 for https://boards-api.greenhouse.io/v1/boards/quip/jobs?content=true&pay_transparency=true"
+    },
+    {
+      "company": "TrueLayer",
+      "ats": "greenhouse",
+      "token": "truelayer",
+      "error": "HTTP 404 for https://boards-api.greenhouse.io/v1/boards/truelayer/jobs?content=true&pay_transparency=true"
     }
   ],
   "hasBaseline": true,
-  "openJobs": 35620
+  "openJobs": 35575
 }
